@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header{
+  background-color:#ed7800;
+  color:white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+ .footer {
+    background-color: #343a40;
+    color:#ed7800;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.search-box {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.search-box input:focus {
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+}
+
+#meal-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}
+
+#show-all-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Contact Section */
+#contact{
+background-color: black;
+color: white;
+}
+
+#contact h2 {
+font-size: 2em;
+}
+
+#contact ul {
+padding: 0;
+margin: 0;
+}
+
+#contact ul li {
+font-size: 1em;
+margin: 5px 0;
+}
+
+/* Modal Styles */
+#mealDetailsModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    z-index: 1000;
+    width: 90%;
+    max-width: 500px;
+}
+
+#modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#modal-body-content h5 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+#modal-body-content img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#modal-body-content p, #modal-body-content ul {
+    font-size: 0.9rem;
+    color: #333;
+}
+
